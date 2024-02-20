@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+
+<body>
+    
+<!-- edit-form.html.j2 -->
+<div style="text-align:center;" id="myForm" class = "formPopUp">
+
+    <h2>Edit Recipe</h2>
+    
+<form action="" id="recipe-form">
+    <label for="">Recipe Name</label><br>
+    <input type="text" placeholder="Recipe Name" id="edit-recipe-name"><br><br>
+
+    <label for="">Ingredients</label><br>
+    <textarea name="" id="edit-ingredients" cols="80" rows="3"
+    placeholder="List ingredients separated by commas"  ></textarea><br><br>
+
+    <label for="">Steps for preparation</label><br>
+    <textarea name="" id="edit-steps" cols="80" rows="4"
+     placeholder="Steps for preparation" >
+        </textarea><br><br>
+
+    <label for="">Image URL</label><br>
+    <input type="url" placeholder="http://example.com/my-dish.jpg" id="edit-imageUrl"><br><br>
+
+
+
+    <button type="submit" onclick="closeForm()" id="updateRecipe" >Update Recipe </button><br>
+    
+
+</form>
+
+</div>
+<script src="../Js/index.js"></script>
+
+</body>
+
+</html>

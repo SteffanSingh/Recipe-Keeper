@@ -1,0 +1,70 @@
+*{
+    background-color: lightgrey;
+    
+}
+
+h1{
+
+    text-align: center;
+    color: red;
+}
+
+
+ 
+
+form  {
+
+    padding: 10px;
+    margin: 20px;
+   
+}
+
+ h2{
+    text-align: center;
+     
+ }
+
+ input{
+    width: 200px;
+    height: 20px;
+ }
+ input, textarea{
+    border-radius: 3px;
+    border-color: rgb(135, 135, 188);
+    margin-top: 10px;
+    width: 200px;
+
+ }
+ div{
+    border: 2px solid navy;
+    border-radius: 10px;
+    background-color:light grey;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+     
+ }
+
+#addRecipe{
+    border: 2px solid navy;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    color: blueviolet;
+    font-size: 20px;
+}
+
+#addRecipe:hover{
+     color: red;
+     background-color: bisque;
+}
+
+button:hover{
+    cursor: pointer;
+    color: red;
+    background-color: aqua;
+}
+button {
+    border: 3px solid navy;
+    border-radius: 10px;
+    padding: 10px;
+    color: blue;
+}
