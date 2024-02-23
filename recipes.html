@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Keeper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f6f6;
+        }
+        .header {
+            background-image: url('kitchen-background.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        p {
+            font-size: 18px;
+        }
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #fff;
+            margin: 10px auto 20px;
+            width: 50%;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: auto;
+            max-width: 800px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            text-align: center;
+            margin-bottom: 20px;
+            transition: width 0.5s ease;
+            overflow: hidden;
+        }
+        input[type="text"],
+        textarea,
+        input[type="url"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px; /* Added space between buttons */
+        }
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+        #display-area {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .recipe-card {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            margin: 10px 5px;
+            max-width: 300px;
+            text-align: center;
+        }
+        .recipe-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header" style="background-color: #008080; padding: 20px; text-align: center; color: #fff;">
+        <h1 style="margin-bottom: 10px;">RECIPE KEEPER</h1>
+        <p>Your Friend in the Kitchen</p>
+        <hr style="border-color: #fff;">
+    </div>
+    
+
+    <div class="container">
+
+        <div>
+
+            <h2>Add Recipe</h2>
+            
+            <form action="" id="recipe-form" style="width: 80%; margin: auto;">
+                <label for="">Recipe Name</label><br>
+                <input type="text" placeholder="Recipe Name" id="recipe-name"><br><br>
+    
+                <label for="">Ingredients</label><br>
+                <textarea name="" id="ingredients" cols="80" rows="3"
+                placeholder="List ingredients separated by commas">Ingredients</textarea><br><br>
+    
+                <label for="">Steps for preparation</label><br>
+                <textarea name="" id="steps" cols="80" rows="4"
+                 placeholder="Steps for preparation">Steps for preparation</textarea><br><br>
+    
+                <label for="">Image URL</label><br>
+                <input type="url" placeholder="http://example.com/my-dish.jpg" id="imageUrl"><br><br>
+    
+                <button id="addRecipe">Add Recipe</button>
+            </form>
+        </div>
+        
+        
+        <div class="container">
+            
+            <h2>Your Recipes</h2>
+
+            <div id="display-area"></div>
+
+        </div>
+       
+    </div>
+
+    <script src="../Js/index.js"></script>
+    <!-- Add this script tag to include Mustache.js -->
+ 
+</body>
+</html>
