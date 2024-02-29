@@ -15,9 +15,10 @@ recipeForm.addEventListener('submit', function(event) {
 
     let enteredRecipeName = recipeName.value;
     let enteredIngredients = ingredients.value;
-    let enteredSteps = steps.value;
-    let enteredImageURL = imageUrl.value;
+    let enteredSteps = steps.value; 
+    let enteredImageURL = imageUrl.value ;
 
+     
     let ingredientArr = enteredIngredients.split(",");
 
     let newRecipe = {
@@ -81,7 +82,9 @@ function displayRecipe(recipe, index) {
     
 
     // add more code here to include the recipe info
-    recipeDiv.innerHTML = `<h2>${recipe.name} </h2>` ;
+    recipeDiv.innerHTML = `<h2 >${recipe.name} </h2>` ;
+
+     
     if (recipe.imageUrl !== ""){
         recipeDiv.innerHTML += `<img src= ${recipe.imageUrl} height=200px,width=300px/> <br>`
 
@@ -107,17 +110,16 @@ function displayRecipe(recipe, index) {
     deleteButton.onclick = function() {
 
         const id = recipe.id;
-        deleteRecipe(id);
+        deleteRecipeFetch(id);
 
     };
 
     const id = recipe.id;
 
-    editButton.onclick= function(){
-
+    editButton.onclick = function() {
+        // Assuming you have the recipe ID and name available in variables id and recipeName
         localStorage.setItem("id", id);
-        window.location.href = 'edit-form.html?data=' + encodeURIComponent(id);
-
+        window.location.href = 'edit-form.html?id=' + encodeURIComponent(id) + '&name=' + encodeURIComponent(recipe.name);
     }
 
     recipeDiv.appendChild(editButton);
@@ -187,76 +189,4 @@ catch(error){
 }
  }
  
-
-
-function deleteRecipe(id) {
-    // Remove recipe from the array recipes
-    
-     
-    //recipes.splice(index, 1);
-    deleteRecipeFetch(id)
-
-    // Refresh the Display
-    displayArea.innerHTML = ""; 
-    
-    recipes.forEach((item, i)=>{
-   
-        displayRecipe(item,i)
-
-    });
-
-    //localStorage.setItem('recipes', JSON.stringify(recipes));
-
-}
-
-
-
- async function closeForm(){
-      let id = localStorage.getItem("id");
-
-      let editedRecipe = {
-
-        name: document.getElementById('edit-recipe-name').value,
-        ingredients: document.getElementById('edit-ingredients').value.split(','),
-        steps: document.getElementById('edit-steps').value,
-        
-
-      };
-
-      try {
-          const apiURL = `http://127.0.0.1:8000/recipes/${id}`;
-          const response = await fetch(apiURL, {
-            method: "PUT",
-            headers: {
-              "Content-Type": "application/json"
-            },
-            body: JSON.stringify(editedRecipe)
-      });
-      if (response.ok) {
-        
-       console.log("The data has been fetched-")
-       window.location.href = "recipes.html";
-       alert("The Recipe has been updated successfully !")
-
-      }  
-      else{
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-    } 
-
-    catch (error) {
-     //notifyError("Error updating recipe");
-      
-
-     //notifyError("Server is not working properly "+error.message)
-      console.error("Error:", error.message);
-
-    }
-      };
-    
-
-
-       
-      // Example usage
-      // notifyError("This is an error message!");
-      
+ 
