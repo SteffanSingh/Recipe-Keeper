@@ -3,34 +3,42 @@
     "id": 19,
     "name": "Pasta",
     "ingredients": [
-      " Ingredients"
+      "Pasta",
+      " sauce",
+      " chilly",
+      " onion"
     ],
-    "steps": "                    Steps for preparation",
+    "steps": "Amazing way to Cook pasta\n",
     "imageUrl": "https://tse2.mm.bing.net/th?id=OIP.McRdkDxCHcfV1W6FpV6cngAAAA&pid=Api&P=0&h=180"
   },
   {
     "id": 20,
     "name": "samosa",
     "ingredients": [
-      " Ingredients"
+      " Potato",
+      " Spice"
     ],
-    "steps": "                    Steps for preparation",
+    "steps": "               Articulate cooking",
     "imageUrl": "https://tse3.mm.bing.net/th?id=OIP.Xp2RQVjyCr3kN1G8VhcK_wHaE_&pid=Api&P=0&h=180"
   },
   {
     "id": 21,
     "name": "Paneer chilly",
     "ingredients": [
-      " Ingredients"
+      "Paneer",
+      " chilly",
+      " Onion",
+      " Spice"
     ],
-    "steps": "                    Steps for preparation",
-    "imageUrl": "https://tse2.mm.bing.net/th?id=OIP.9tEu4d-sbzklyArmqoI22AHaE8&pid=Api&P=0&h=180"
+    "steps": "~~ Amazing way to chilly paneer spicy",
+    "imageUrl": "https://tse1.mm.bing.net/th?id=OIP.qLzy3RAzoKYe2fcj68u51gHaFj&pid=Api&rs=1&c=1&qlt=95&w=154&h=115"
   },
   {
     "id": 22,
     "name": " chicken tikka",
     "ingredients": [
-      " Ingredients"
+      " Ingredients",
+      " chicken"
     ],
     "steps": "                    Steps for preparation",
     "imageUrl": "https://tse4.mm.bing.net/th?id=OIP.l6bh5V6ntivBUXhvORAHUwHaF7&pid=Api&P=0&h=180"
@@ -39,9 +47,11 @@
     "id": 23,
     "name": "Pasta penne",
     "ingredients": [
-      " Ingredients"
+      " Ingredients",
+      "PAsta",
+      "PENNe"
     ],
-    "steps": "                    Steps for preparation",
+    "steps": "                  Nice and amazing  Steps for preparation",
     "imageUrl": "https://tse2.mm.bing.net/th?id=OIP.YfoUnS0wQx5l3kPKf2-i7wHaEw&pid=Api&P=0&h=180"
   },
   {
@@ -54,5 +64,15 @@
     ],
     "steps": "Amazing way of preparation !!",
     "imageUrl": "https://i.ytimg.com/vi/iqP_bV5kqys/maxresdefault.jpg"
+  },
+  {
+    "id": 25,
+    "name": "SAMOSA WORLDWIDEZOss",
+    "ingredients": [
+      "Samosa",
+      " pakauda"
+    ],
+    "steps": "namaste samosa",
+    "imageUrl": ""
   }
 ]

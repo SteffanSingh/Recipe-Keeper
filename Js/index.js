@@ -48,7 +48,7 @@ async function fetchRecipes(){
         
     let response = await fetch("http://127.0.0.1:8000/recipes")
     recipes = await response.json()
-    console.log(recipes)
+     
     recipes.forEach((recipe,index) => displayRecipe(recipe, index));
     
 
@@ -118,8 +118,9 @@ function displayRecipe(recipe, index) {
 
     editButton.onclick = function() {
         // Assuming you have the recipe ID and name available in variables id and recipeName
-        localStorage.setItem("id", id);
-        window.location.href = 'edit-form.html?id=' + encodeURIComponent(id) + '&name=' + encodeURIComponent(recipe.name);
+        //localStorage.setItem("id", id);
+         
+        window.location.href = 'edit-form.html?id=' + encodeURIComponent(id) + '&name=' + encodeURIComponent(recipe.name) + '&image=' + encodeURIComponent(recipe.imageUrl) + '&ingredients=' + encodeURIComponent(recipe.ingredients) + '&steps=' + encodeURIComponent(recipe.steps);
     }
 
     recipeDiv.appendChild(editButton);

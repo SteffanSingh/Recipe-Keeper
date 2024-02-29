@@ -4,47 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .formPopUp {
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"],
+        input[type="url"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 
 <body>
-    
-<!-- edit-form.html.j2 -->
-<div style="text-align:center;" id="myForm" class = "formPopUp">
 
+<div style="text-align:center;" id="myForm" class="formPopUp">
     <h2>Edit Recipe</h2>
     
-<form action="" id="recipe-form">
-    <label for="" id = "recipe-name-label">Recipe Name</label><br>
-    <input type="text" placeholder="Recipe Name" id="edit-recipe-name"><br><br>
+    <form action="" id="recipe-form">
+        <label for="edit-recipe-name" id="recipe-name-label">Recipe Name</label><br>
+        <input type="text" placeholder="Recipe Name" id="edit-recipe-name"><br><br>
 
-    <label for="">Ingredients</label><br>
-    <textarea name="" id="edit-ingredients" cols="80" rows="3"
-    placeholder="List ingredients separated by commas"  ></textarea><br><br>
+        <label for="edit-ingredients">Ingredients</label><br>
+        <textarea type="text" id="edit-ingredients" cols="80" rows="3" placeholder="List ingredients separated by commas"></textarea><br><br>
 
-    <label for="">Steps for preparation</label><br>
-    <textarea name="" id="edit-steps" cols="80" rows="4"
-     placeholder="Steps for preparation" >
-        </textarea><br><br>
+        <label for="edit-steps">Steps for preparation</label><br>
+        <textarea  type=""text id="edit-steps" cols="80" rows="4" placeholder="Steps for preparation"></textarea><br><br>
 
-    <label for="">Image URL</label><br>
-    <input type="url" placeholder="http://example.com/my-dish.jpg" id="edit-imageUrl"><br><br>
+        <label for="edit-imageUrl">Image URL</label><br>
+        <input type="text" placeholder="http://example.com/my-dish.jpg" id="edit-imageUrl"><br><br>
 
-
-
-    <button type="submit" onclick="closeForm()" id="updateRecipe" >Update Recipe </button><br>
-    
-
-</form>
+        <button type="submit" onclick="closeForm()" id="updateRecipe">Update Recipe</button><br>
+    </form>
 
 </div>
+<script>
+    
+</script>
 
- 
-<strong></strong>
 <script src="Js/edit.js"></script>
 
 </body>
-
 </html>
