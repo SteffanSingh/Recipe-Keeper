@@ -114,11 +114,12 @@ function displayRecipe(recipe, index) {
 
     };
 
-    const id = recipe.id;
+    
 
     editButton.onclick = function() {
+        const id = recipe.id;
         // Assuming you have the recipe ID and name available in variables id and recipeName
-        //localStorage.setItem("id", id);
+        localStorage.setItem("id", id);
          
         window.location.href = 'edit-form.html?id=' + encodeURIComponent(id) + '&name=' + encodeURIComponent(recipe.name) + '&image=' + encodeURIComponent(recipe.imageUrl) + '&ingredients=' + encodeURIComponent(recipe.ingredients) + '&steps=' + encodeURIComponent(recipe.steps);
     }
@@ -148,9 +149,9 @@ try{
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
 
-    let newRecipe = recipe.json()
+     
 
-    displayRecipe(newRecipe)
+     
     alert(`The recipe ${newRecipe} has been added !`)
 
     console.log(`The recipe ${newRecipe} has been added !`)
@@ -183,7 +184,7 @@ finally{
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
     alert(`The recipe  has been successfully deleted !`)
-
+        fetchRecipes()
 }
 catch(error){
     console.error("Error",error.message)

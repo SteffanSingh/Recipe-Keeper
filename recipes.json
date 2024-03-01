@@ -1,7 +1,7 @@
 [
   {
     "id": 19,
-    "name": "Pasta",
+    "name": "Pasta Spicy",
     "ingredients": [
       "Pasta",
       " sauce",
@@ -13,10 +13,11 @@
   },
   {
     "id": 20,
-    "name": "samosa",
+    "name": "Samosa Singh",
     "ingredients": [
       " Potato",
-      " Spice"
+      " Spice",
+      "chilly"
     ],
     "steps": "               Articulate cooking",
     "imageUrl": "https://tse3.mm.bing.net/th?id=OIP.Xp2RQVjyCr3kN1G8VhcK_wHaE_&pid=Api&P=0&h=180"
@@ -60,9 +61,19 @@
     "ingredients": [
       "Mutton",
       " Spices",
-      " onion"
+      " onion",
+      " Chilly"
     ],
     "steps": "Amazing way of preparation !!",
     "imageUrl": "https://i.ytimg.com/vi/iqP_bV5kqys/maxresdefault.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Classic  ",
+    "ingredients": [
+      "Ingredients"
+    ],
+    "steps": "Steps for preparation",
+    "imageUrl": ""
   }
 ]
